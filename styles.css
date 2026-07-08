@@ -83,7 +83,37 @@ ul {
 
 img {
     width: 200px;
-    height: 150px;       /* Define uma altura fixa para todas as fotos */
-    object-fit: cover;   /* Corta e adapta a imagem para preencher o espaço sem distorcer */
-    border-radius: 8px;  /* Opcional: só para dar um acabamento bonito nos cantos */
+    height: 150px;       
+    object-fit: cover;   
+    border-radius: 8px;  
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        gap: 15px;
+    }
+    
+    button {
+        width: 130px; 
+        height: 45px;
+        font-size: 18px;
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+        gap: 20px;
+    }
+
+    img {
+        max-width: 160px; 
+        height: 120px;
+    }
+
+    .burger-name, p {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
 }
