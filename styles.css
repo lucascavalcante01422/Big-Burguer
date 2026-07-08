@@ -89,31 +89,22 @@ img {
 }
 
 @media (max-width: 900px) {
-    .buttons {
-        gap: 15px;
+    h1 {
+        font-size: 80px;
     }
-    
-    button {
-        width: 130px; 
-        height: 45px;
-        font-size: 18px;
-    }
-
     ul {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
-        gap: 20px;
+        grid-template-columns: repeat(3, 200px); /* Volta a ter as 3 colunas originais no PC */
+        max-width: 100%;
     }
-
     img {
-        max-width: 160px; 
-        height: 120px;
+        max-width: 200px;
+        height: 150px;
     }
-
-    .burger-name, p {
-        font-size: 18px;
+    li {
+        background-color: transparent;
+        padding: 0;
     }
-
-    .price {
-        font-size: 22px;
-    }
+    .burger-name, p { font-size: 25px; }
+    
+    .price { font-size: 30px; }
 }
