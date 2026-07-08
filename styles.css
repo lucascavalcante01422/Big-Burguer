@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #121212;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 15px;
+
+    font-size: 150px;
+    font-weight: 700;
+    color: #E0E0E0;
+}
+
+.buttons{
+    margin: 30px 0;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+button {
+    width: 150px;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    background-color: #FFC107;
+    color: #000000;
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ce9b02;
+    transition: 0.5s ease;
+}
+
+.burger-name {
+    font-size: 25px;
+    color: #E0E0E0;
+}
+
+p{
+    font-size: 25px;
+    color: #E0E0E0;
+}
+
+.price{
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+
+    gap: 20px;
+}
+
+img {
+    width: 200px;
+    height: 150px;       /* Define uma altura fixa para todas as fotos */
+    object-fit: cover;   /* Corta e adapta a imagem para preencher o espaço sem distorcer */
+    border-radius: 8px;  /* Opcional: só para dar um acabamento bonito nos cantos */
+}
